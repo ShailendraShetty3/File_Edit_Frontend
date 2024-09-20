@@ -6,10 +6,19 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.20.6",
+    "axios": "^1.7.7",
+    "path-browserify": "^1.0.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.6.82",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "tesseract.js": "^5.1.1",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4",
+    "worker-loader": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
