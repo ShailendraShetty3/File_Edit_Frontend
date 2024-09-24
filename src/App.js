@@ -1,29 +1,23 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FileUpload from './components/index'
+import { Suspense, lazy } from "react";
 
-import VideoUpload from './Video/index'
+// Lazy load components
+const FileUpload = lazy(() => import('./components/index'));
+const VideoUpload = lazy(() => import('./Video/index'));
+const Home = lazy(() => import("./Home"));
 
-import Home from "./Home"
-
-
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-
-      <Route path="/" element={<Home />} >
-
-      </Route>
-        <Route path="/file" element={<FileUpload />} >
-
-        </Route>
-
-        <Route path="/video" element={<VideoUpload />} >
-
-        </Route>
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/file" element={<FileUpload />} />
+          <Route path="/video" element={<VideoUpload />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
