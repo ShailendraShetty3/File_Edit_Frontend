@@ -1,0 +1,28 @@
+/* src/HomePage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.ant-layout-header {
+    padding: 0;
+}
+
+.ant-btn {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.ant-btn-primary:hover {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+
+.ant-btn-default:hover {
+    background-color: #e6f7ff;
+    border-color: #91d5ff;
+}
